@@ -1,3 +1,9 @@
+--[[
+This module manages the amount of time a player can spend underwater before they start to lose health, based on the position of the head on the water terrain in Roblox. The heads detection position is two studs above the actual head position to account for the player swimming on the surface.
+Made by @Grant 2022 
+]]
+
+
 local constant = 20
 
 local TankTypes = {
