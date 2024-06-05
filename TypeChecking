@@ -7,7 +7,7 @@
 -- "..." in programming terms is a variadic argument
 
 --!strict
----------------------------------------------------------------------
+
 
 local function sum(a : number,b : number, ... : number): (number, string)
 	local additionalArgs = table.pack(...) -- Returns an dictionary with a string ["n"] = x at the end where x equals the number of extra arguments given.
@@ -15,7 +15,7 @@ local function sum(a : number,b : number, ... : number): (number, string)
 end;
 
 sum(1,1,5,6,7,8);
----------------------------------------------------------------------
+
 -- The "|" means or; so it can be any of the options listed.
 
 local function sum2(a : "Hello" | "Hi" | "Hey") -- Singleton/Literal Type; currently only supported for strings and booleans: when the type is the string.
