@@ -1,5 +1,3 @@
-
-
 local function sum(a : number,b : number, ... : number): (number, string)
 	local additionalArgs = table.pack(...) -- Returns an dictionary with a string ["n"] = x at the end where x equals the number of extra arguments given.
 	return a+b,"CustomString";
